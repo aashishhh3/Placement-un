@@ -1,0 +1,41 @@
+.banner {
+    background: rgb(35, 102, 10);
+    background: linear-gradient(180deg, rgba(35, 102, 10, 0.9893207282913166) 0%, rgba(9, 143, 65, 1) 40%, rgba(255, 255, 255, 1) 100%);
+    font-size: larger;
+    height: 100vh;
+    display: flex;
+    width: 35%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.image-container {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    margin-bottom: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+}
