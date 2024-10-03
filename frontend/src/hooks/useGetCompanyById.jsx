@@ -23,4 +23,5 @@ const useGetCompanyById = (companyId) => {
     },[companyId, dispatch])
 }
 
+
 export default useGetCompanyById
