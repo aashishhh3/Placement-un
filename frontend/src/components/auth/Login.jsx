@@ -18,7 +18,7 @@ const Login = () => {
     const [input, setInput] = useState({
         email: "",
         password: "",
-        role: "",
+        class: "",
     });
     const { loading,user } = useSelector(store => store.auth);
     const navigate = useNavigate();
@@ -89,24 +89,24 @@ const Login = () => {
                             <div className="flex items-center space-x-2">
                                 <Input
                                     type="radio"
-                                    name="role"
-                                    value="student"
-                                    checked={input.role === 'student'}
+                                    name="class"
+                                    value="3rdYear"
+                                    checked={input.class === '3rdYear'}
                                     onChange={changeEventHandler}
                                     className="cursor-pointer"
                                 />
-                                <Label htmlFor="r1">Student</Label>
+                                <Label htmlFor="r1">3rd_Year</Label>
                             </div>
                             <div className="flex items-center space-x-2">
                                 <Input
                                     type="radio"
-                                    name="role"
-                                    value="recruiter"
-                                    checked={input.role === 'recruiter'}
+                                    name="class"
+                                    value="finalYear"
+                                    checked={input.class === 'finalYear'}
                                     onChange={changeEventHandler}
                                     className="cursor-pointer"
                                 />
-                                <Label htmlFor="r2">Coordinator</Label>
+                                <Label htmlFor="r2">Final_Year</Label>
                             </div>
                         </RadioGroup>
                     </div>
